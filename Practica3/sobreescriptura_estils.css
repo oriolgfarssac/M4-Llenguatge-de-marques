@@ -1,23 +1,23 @@
 /*1. color general de la lletra negra*/
-p{
-    font-weight: bold;
+body > #container{
+    color: black;
 }
 
 /*2. titol nivell 1 fons blanc lletra gris*/
-.nivell1{
+h1#titol-pagina{
     background-color: white;
     color: grey;
 }
 
 /*3. tots els strong en color verd i subratllats*/
-strong{
+p.paragraf1 strong, p.paragraf2 strong{
     color: green;
     text-decoration: underline;
 }
 
 
 /*4. enllaços del paràgraf2 en italica*/
-.paragraf2{
+p.paragraf2 a{
     font-style: italic;
 }
 
@@ -30,5 +30,4 @@ footer{
 }
 
 /*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
-/*En el meu cas no afecta, i es veu igual, pero soposo que en altres dispositius es podrien no carregar alguns estils o de manera incorrecte, jo el que faria seria fer un unic arxiu css
-per aquesta pagina.*/
+/*En el meu cas no afecta, i es veu igual, ja que he optimitzat el css fent servir correctament l'ordre de prioritat, encara així, jo el que faria seria fer un unic arxiu css.*/
