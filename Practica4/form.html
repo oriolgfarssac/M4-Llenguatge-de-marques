@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="formSuccesful.html">
+        <h1>Welcome to The Form Page</h1>
+        <input type="email" placeholder="Email..." id="input" required> <!-- El placeholder es el text que ens dona una petita descripció abans de clicar a l'input i posar el valor, no es el value. -->
+        <br>
+        <br>
+        <input type="text" placeholder="Username..." id="input"  required><!-- El required obliga a l'usuari a donar un valor a l'input-->
+        <br>
+        <br>
+        <input type="password" placeholder="Password..." id="input" required>
+        <br>
+        <br>
+        <input type="number" placeholder="Phone Number..." id="input" required>
+        <br>
+        <br>
+        <select id="dropdown" required> <!-- El select de tipus dropdown ens deixa escollir entre les opcions que li donem -->
+            <option disabled selected>Studies</option> <!--El disablet fa que aquesta opcio no es pugi triar, i el selected, fa que estigui selecionat de manera prederminada-->
+            <option>DAW</option> <!--Es una opcio del dropdown -->
+            <option>DAM</option>
+            <option>ASIX</option>
+        </select>
+        <br>
+        <br>
+        <div id="checkboxContainer" required> <!-- Div que conte i ajusta amb css els checkbox -->
+            <label for="cmp">Computer</label> <!-- El for cmd es refereix al id cmp del input computer -->
+            <input type="checkbox" name="Computer" id="cmp" class="inp" checked> <!-- Marca de manera prederminada un checkbox-->
+            <label for="tbl">Tablet</label>
+            <input type="checkbox" name="Tablet" id="tbl" class="inp"> <!-- Un checkbox es tipus d'input que es marca amb un tick -->
+            <label for="pn">Mobile</label>
+            <input type="checkbox" name="Mobile" id="pn" class="inp">
+        </div>
+        <br>
+        <br>
+        <div id="radioContainer" required>
+            <label for="cmp">Male</label>
+            <input type="radio" name="gender" id="cmp" class="inp">
+            <label for="tbl">Female</label>
+            <input type="radio" name="gender" id="tbl" class="inp" checked>
+            <label for="pn">Others</label>
+            <input type="radio" name="gender" id="pn" class="inp">
+        </div>
+        <br>
+        <br>
+        <textarea id="description" placeholder="Introduce a little description..." required></textarea> >
+        <br>
+        <br>
+        <button id="button" type="submit">Submit Form</button>
+        <br>
+        <br>
+    </form>
+</body>
+</html>
