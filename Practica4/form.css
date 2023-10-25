@@ -1,4 +1,4 @@
-body{
+body{ /*Cambiem el tipos de font ho centrem tot tant vertical com horitzontalment, i canviem el fons a un color*/
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -11,7 +11,7 @@ body{
     background-color: rgb(207, 253, 163);
 }
 
-form{
+form{/*Li donem un heigh width aliniem al centre li canviem el color de fons li donem una ombra al voltant li donem un border radious i li donem color al text*/
     text-align: center;
     height: 92%;
     width: 40%;
@@ -24,7 +24,7 @@ form{
     border-radius: 20px;
 }
 
-#input{
+.input{/*Li donem un heigh width aliniem al centre li canviem el color de fons li donem una ombra al voltant li donem un border radious i li donem color al text*/
     width: 250px;
     height: 40px;
     border: solid 2px rgb(207, 253, 163);
@@ -37,21 +37,21 @@ form{
     color: rgb(28, 28, 28);
 }
 
-#input:hover{
+.input:hover{ /* Al fer hover per sobre l'input li canviem l'ombra*/
     box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
-#input:active{
+.input:active{ /* Al clicar sobre l'input li canviem tambe l'ombra*/
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-#input:focus{
+.input:focus{ /*Al clicar li canviem l'ombra i li treiem l'estil outline prederminat*/
     background-color: rgb(207, 253, 163);
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
     outline: none;
 }
 
-#button{
+#button{ /* Canviem el color del boto el tamany de la font li posem una ombra, l'aliniem i li donem un radi al border*/
     font-weight: bold;
     color: rgb(164, 212, 119);
     width: 250px;
@@ -64,17 +64,17 @@ form{
     margin-right: auto;
 }
 
-#button:hover{
+#button:hover{ /*Canviem la obra i el color de fons en passar el ratoli per sobre*/
     box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
     background-color: rgb(207, 253, 163);
 }
 
-#button:active{
+#button:active{ /*Canviem la obra i el color de fons en passar en clicar*/
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgb(201, 255, 150);
+    background-color: rgb(190, 244, 139);
 }
 
-#dropdown{
+#dropdown{ /*Canviem la obra i el color de fons en passar el ratoli per sobre*/
     font-weight: bold;
     color: rgb(164, 212, 119);
     width: 250px;
@@ -87,15 +87,15 @@ form{
     margin-right: auto;
 }
 
-#dropdown:hover{
+#dropdown:hover{ /*Canviem lobra en passar per sobre*/
     box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
-#dropdown:focus{
+#dropdown:focus{/*Li treiem l'outiline en focus*/
     outline: none;
 }
 
-#checkboxContainer{
+#checkboxContainer{ /*Li canviem color tamany de text centrat...*/
     font-weight: bold;
     color: rgb(207, 253, 163);
     margin-left: auto;
@@ -107,7 +107,7 @@ form{
     align-items: center;
 }
 
-#radioContainer{
+#radioContainer{ /*Li canviem color tamany de text centrar...*/
     font-weight: bold;
     color: rgb(207, 253, 163);
     margin-left: auto;
@@ -119,12 +119,13 @@ form{
     align-items: center;
 }
 
-.inp{
+.inp{ /*Li treu el marge de dalt i abaix als checkbox i radio*/
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#description{
+#description{ /*Li donem width height color border color radio...*/
+    font-weight: bold;
     border: solid 2px rgb(207, 253, 163);
     margin-left: auto;
     margin-right: auto;
@@ -135,12 +136,13 @@ form{
     border-radius: 10px;
 }
 
-#description:focus{
+#description:focus{ /*En focus canviem el color de fons la obra i li treiem outline*/
+    background-color: rgb(207, 253, 163);
     outline: none;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-#button2{
+#button2{ /*El mateix que l'altre boto pero amb display flex*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,12 +159,12 @@ form{
     margin-right: auto;
 }
 
-#button2:hover{
+#button2:hover{ /*Canviem la obra i el color de fons en passar el ratoli per sobre*/
     box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.1);
     background-color: rgb(207, 253, 163);
 }
 
-#button2:active{
+#button2:active{ /*Al clicar li canviem l'ombra i li treiem l'estil outline prederminat*/
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgb(201, 255, 150);
+    background-color: rgb(190, 244, 139);
 }

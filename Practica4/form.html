@@ -9,16 +9,16 @@
 <body>
     <form action="formSuccesful.html">
         <h1>Welcome to The Form Page</h1>
-        <input type="email" placeholder="Email..." id="input" required> <!-- El placeholder es el text que ens dona una petita descripció abans de clicar a l'input i posar el valor, no es el value. -->
+        <input type="email" placeholder="Email..." class="input" required> <!-- El placeholder es el text que ens dona una petita descripció abans de clicar a l'input i posar el valor, no es el value. -->
         <br>
         <br>
-        <input type="text" placeholder="Username..." id="input"  required><!-- El required obliga a l'usuari a donar un valor a l'input-->
+        <input type="text" placeholder="Username..." class="input"  required><!-- El required obliga a l'usuari a donar un valor a l'input-->
         <br>
         <br>
-        <input type="password" placeholder="Password..." id="input" required>
+        <input type="password" placeholder="Password..." class="input" required>
         <br>
         <br>
-        <input type="number" placeholder="Phone Number..." id="input" required>
+        <input type="number" placeholder="Phone Number..." class="input" required>
         <br>
         <br>
         <select id="dropdown" required> <!-- El select de tipus dropdown ens deixa escollir entre les opcions que li donem -->
@@ -41,7 +41,7 @@
         <br>
         <div id="radioContainer" required>
             <label for="cmp">Male</label>
-            <input type="radio" name="gender" id="cmp" class="inp">
+            <input type="radio" name="gender" id="cmp" class="inp"> <!-- Aquest input es de tipos radio, es a dir un tipus de selector rodo -->
             <label for="tbl">Female</label>
             <input type="radio" name="gender" id="tbl" class="inp" checked>
             <label for="pn">Others</label>
@@ -52,8 +52,8 @@
         <textarea id="description" placeholder="Introduce a little description..." required></textarea> >
         <br>
         <br>
-        <button id="button" type="submit">Submit Form</button>
-         <br>
+        <button id="button" type="submit">Submit Form</button> <!-- Es el boto que "enviaria" el formulari i que ens porta a l'altre pagina ja que esta conectat amb el <form> amb submit-->
+         <br> 
          <br>  
     </form>
 </body>
